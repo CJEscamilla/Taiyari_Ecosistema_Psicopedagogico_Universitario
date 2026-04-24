@@ -26,8 +26,10 @@
 </p>
 
 ---
+# A-TENCION 
 
-> 💡 **A-TENCIÓN** actúa como un puente entre la institución y sus clientes (padres y terapeutas), permitiendo una administración eficiente de servicios de apoyo cognitivo a través de un entorno digital **intuitivo, seguro y profesional**.
+## 1. Contexto General del Sistema
+**A-TENCION** es una plataforma web integral diseñada para la gestión de material educativo y experiencias sensoriales. El sistema actúa como un puente entre la plataforma y sus clientes principales (padres y terapeutas), permitiendo una administración eficiente de servicios de apoyo cognitivo y sensorial a través de un entorno digital intuitivo y seguro.
 
 ---
 
