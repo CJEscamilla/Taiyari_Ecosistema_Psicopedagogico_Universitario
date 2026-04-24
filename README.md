@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="LogoAtencion.jfif" width="300" alt="Logo A-TENCION 1">
+  <br>
+  <img src="LogoXicode.png" width="150" alt="Logo de la empresa">
+</p>
+
 # A-TENCION Sensory Platform
 
 ## 1. Contexto General del Sistema
