@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 97%;
+    --foreground: 25 30% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 25 30% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 30% 12%;
+    --primary: 25 55% 45%;
+    --primary-foreground: 40 30% 97%;
+    --secondary: 35 30% 90%;
+    --secondary-foreground: 25 30% 20%;
+    --muted: 35 20% 92%;
+    --muted-foreground: 25 10% 45%;
+    --accent: 145 30% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 25 55% 45%;
+    --radius: 0.75rem;
+    --accent-teal: 172 50% 45%;
+  }
+
+  .dark {
+    --background: 25 20% 8%;
+    --foreground: 40 25% 95%;
+    --card: 25 20% 12%;
+    --card-foreground: 40 25% 95%;
+    --popover: 25 20% 12%;
+    --popover-foreground: 40 25% 95%;
+    --primary: 25 55% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 25 15% 20%;
+    --secondary-foreground: 40 25% 90%;
+    --muted: 25 15% 20%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 145 30% 42%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 25 10% 22%;
+    --input: 25 10% 22%;
+    --ring: 25 55% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+[data-hydration-error] {
+  display: none !important;
+}
+
+.font-display {
+  font-family: var(--font-baloo), sans-serif;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary via-amber-600 to-amber-500 bg-clip-text text-transparent;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+.text-warm {
+  color: hsl(25 55% 45%);
+}
+
+.bg-warm {
+  background-color: hsl(25 55% 45%);
+}
+
+.bg-warm-light {
+  background-color: hsl(35 40% 95%);
+}
