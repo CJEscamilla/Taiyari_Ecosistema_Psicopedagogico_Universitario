@@ -1,124 +1,168 @@
-<!-- PORTADA -->
-<p align="center">
-  <img src="imagenes/LogoAtencion.jfif" width="280" alt="Logo A-TENCION" style="border-radius:16px;">
+# Proyecto A-TENCIÓN
+
+### A-TENCIÓN - IDENTIDAD GRÁFICA
+<p align="justify">
+La identidad gráfica de A-TENCIÓN busca transmitir valores de inclusión, empatía, profesionalismo y confianza. Cada elemento visual está diseñado para resonar con padres, tutores y terapeutas, destacando la importancia del desarrollo sensorial infantil y la accesibilidad tecnológica a servicios especializados para niños con necesidades especiales.
 </p>
 
-<h1 align="center">✨ A-TENCIÓN · Sensory Platform</h1>
+## LOGOTIPOS
 
-<p align="center">
-  <em>Plataforma web integral para la reservación y gestión de experiencias sensoriales dirigidas a niños con necesidades especiales.</em>
-</p>
+<table>
+   <td>Logo de la Aplicación</td>
+   <td>Logo del Equipo</td>
+  <tr>
+    <td>  <img src="frontend/public/images/logo-atencion.png" width="80%" style="padding: 10px;" />  </td>
+    <td>   <img src="frontend/public/images/logo-atencion.jpg" width="80%" style="padding: 10px;" /> </td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js">
-  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
-  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
-  <img src="https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express">
-  <img src="https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-  <img src="https://img.shields.io/badge/Stripe-Pagos-6772E5?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe">
-  <img src="https://img.shields.io/badge/Resend-Emails-000000?style=for-the-badge&logo=resend&logoColor=white" alt="Resend">
-  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="TailwindCSS">
-</p>
-
-<p align="center">
-  <img src="imagenes/LogoXicode.png" width="140" alt="Logo Xicode">
+### DESCRIPCIÓN
+<p align="justify">
+A-TENCIÓN es una plataforma web integral (Fullstack) diseñada para la gestión y comercialización de experiencias sensoriales infantiles. El sistema permite a los tutores explorar un catálogo de actividades terapéuticas y recreativas, realizar reservaciones en tiempo real y gestionar pagos de forma segura. Técnicamente, el proyecto emplea una arquitectura desacoplada con un Frontend en Next.js y un Backend robusto en Node.js/Express, utilizando MySQL para la persistencia de datos y servicios de terceros (Stripe y Resend) para funcionalidades críticas de pago y notificación.
 </p>
 
 ---
-# A-TENCION 
 
-## 1. Contexto General del Sistema
-**A-TENCION** es una plataforma web integral diseñada para la gestión de material educativo y experiencias sensoriales. El sistema actúa como un puente entre la plataforma y sus clientes principales (padres y terapeutas), permitiendo una administración eficiente de servicios de apoyo cognitivo y sensorial a través de un entorno digital intuitivo y seguro.
+### PLANTEAMIENTO DEL PROBLEMA
 
----
-
-## 📑 Tabla de contenidos
-
-1. [🎯 Entregables de Definición](#-1-entregables-de-definición)
-2. [🧰 Stack Tecnológico](#-2-stack-tecnológico)
-3. [🏗️ Arquitectura del Sistema](#️-3-arquitectura-del-sistema)
-4. [📁 Estructura del Proyecto](#-4-estructura-del-proyecto)
-5. [⚙️ Guía de Instalación](#️-5-guía-de-instalación)
-6. [🔐 Variables de Entorno](#-6-variables-de-entorno)
-7. [🗄️ Esquema de Base de Datos](#️-7-esquema-de-base-de-datos)
-8. [🚀 Ejecución en Desarrollo](#-8-ejecución-en-desarrollo)
-9. [👥 Cuentas y Usuarios de Prueba](#-9-cuentas-y-usuarios-de-prueba)
-10. [💳 Flujo de Pago con Stripe](#-10-flujo-de-pago-con-stripe)
-11. [📧 Envío de Correos con Resend](#-11-envío-de-correos-con-resend)
-12. [📖 Documentación de APIs](#-12-documentación-de-apis)
-13. [🐛 Troubleshooting](#-13-troubleshooting)
-14. [📝 Equipo y Créditos](#-14-equipo-y-créditos)
+<p align="justify">En el contexto actual de la educación y el desarrollo infantil en la región, existe una carencia de plataformas digitales que faciliten el acceso a espacios sensoriales especializados. Los procesos de reserva de sesiones suelen realizarse por canales informales (WhatsApp o llamadas), lo que genera errores de agenda, sobreventa de cupos y falta de control administrativo. Adicionalmente, la inexistencia de pasarelas de pago digitales limita la formalidad del servicio y la comodidad del usuario, mientras que los administradores carecen de herramientas automatizadas para visualizar estadísticas de venta, asistencia o gestión de usuarios en tiempo real. Esta situación impacta negativamente en la eficiencia operativa del servicio y en la experiencia de los tutores que buscan apoyo cognitivo y sensorial para sus hijos.</p>
 
 ---
 
-## 🎯 1. Entregables de Definición
-
-<details open>
-<summary><b>🎯 Requerimientos Funcionales (FRs)</b></summary>
-
-| ID | Requerimiento | Descripción |
-|----|---------------|-------------|
-| **FR01** | 🔑 Autenticación | Creación de cuentas y login seguro para padres y terapeutas. |
-| **FR02** | 📚 Catálogo | Visualización detallada de material educativo y experiencias. |
-| **FR03** | 📅 Reservas | Selección de fechas según disponibilidad en tiempo real. |
-| **FR04** | 💳 Pagos | Procesamiento integrado de reservas a través de pasarela de pago. |
-| **FR05** | ❌ Cancelaciones | Autogestión de citas desde el perfil del usuario. |
-
-</details>
-
-<details open>
-<summary><b>🛡️ Requerimientos No Funcionales (NFRs)</b></summary>
-
-| ID | Requerimiento | Descripción |
-|----|---------------|-------------|
-| **NFR01** | 🔒 Seguridad | Protección de transacciones y datos bajo protocolos SSL/HTTPS. |
-| **NFR02** | 📱 Responsividad | Totalmente funcional en dispositivos móviles y de escritorio. |
-| **NFR03** | ⚡ Rendimiento | Confirmaciones de pago procesadas en &lt; 5 segundos. |
-| **NFR04** | 🌐 Disponibilidad | Operatividad del sistema garantizada al 99.9%. |
-
-</details>
-
-<details open>
-<summary><b>📌 Reglas de Negocio (BRs)</b></summary>
-
-| ID | Regla |
-|----|-------|
-| **BR01** | Una cita solo se considera agendada tras validarse exitosamente el pago. |
-| **BR02** | Es obligatorio tener cuenta activa y sesión iniciada para reservar. |
-| **BR03** | Cancelaciones aplicables solo con **24+ horas** de antelación. |
-
-</details>
+### PROPUESTA DE SOLUCIÓN
+<p align="justify">En respuesta a los desafíos que enfrenta A-TENCIÓN en la gestión de reservas y la comercialización de sus servicios, se propone una aplicación web orientada a servicios que centralice la operación comercial y administrativa. La solución integra un motor de disponibilidad vinculado a la base de datos para evitar la sobreventa de cupos, un ecosistema de APIs externas con Stripe (procesamiento seguro de transacciones bancarias) y Resend (notificaciones transaccionales por correo electrónico), así como un panel administrativo basado en roles que permite la gestión de inventario, reservas y monitoreo de operaciones en tiempo real.</p>
 
 ---
 
-## 🧰 2. Stack Tecnológico
+### OBJETIVO GENERAL
+
+<p align="justify">Desarrollar e implementar una plataforma web para la gestión de experiencias sensoriales, integrando servicios de terceros y una arquitectura cliente-servidor, que optimice el proceso de reserva y pago para los usuarios de A-TENCIÓN en el periodo enero-abril 2026.</p>
+
+---
+
+### OBJETIVOS ESPECÍFICOS
+
+<p align="justify"><strong>Arquitectura Backend</strong>: Construir una API REST propia en Express que gestione la lógica de negocio, autenticación mediante JWT y la conexión al motor de base de datos MySQL.</p>
+
+<p align="justify"><strong>Integración de Servicios</strong>: Implementar el consumo de APIs externas (Stripe y Resend) para garantizar la seguridad en los pagos y la comunicación automatizada con el cliente.</p>
+
+<p align="justify"><strong>Experiencia de Usuario (UX/UI)</strong>: Crear una interfaz responsiva y moderna en Next.js que permita la navegación fluida desde cualquier dispositivo móvil o de escritorio.</p>
+
+<p align="justify"><strong>Seguridad y Roles</strong>: Establecer un sistema de control de acceso basado en roles para diferenciar las funciones de los clientes (tutores) y los administradores (personal de la UTXJ).</p>
+
+<p align="justify"><strong>Automatización de Reservas</strong>: Implementar un motor de disponibilidad en tiempo real que controle cupos, fechas y horarios para evitar conflictos de agenda y sobreventa.</p>
+
+---
+
+### DIAGRAMA DE GANTT
+
+<img src="imagenes/gant.jpg" width="90%" style="padding: 10px;" />
+
+<p align="justify"><strong>Periodo del proyecto:</strong> 12 de enero de 2026 al 12 de abril de 2026. <strong>Jefe de equipo:</strong> Cristopher Joseph Escamilla Vargas. <strong>Metodología:</strong> Scrum con etapas de análisis, diseño, desarrollo, pruebas y cierre documental.</p>
+
+---
+
+### TABLA DE COLABORADORES
+
+| Matrícula | Nombre | Usuario |
+| :--- | :--- | :--- |
+| M-240687 | Cristopher Joseph Escamilla Vargas | [CristopherEV](https://github.com/CJEscamilla) |
+| M-240508 | Jorge Olaf García Quiroga | [JorgeOlaf](https://github.com/JorgeGQ) |
+| M-240463 | Uriel Leonardo González Hernández | [UrielGH](https://github.com/LeoGonz18) |
+| M-240071 | Yhostin Manuel Ramírez González | [YhostinRG](https://github.com/LaGuayaba01) |
+
+---
+
+### ORGANIGRAMA DEL EQUIPO
+<img src="imagenes/organigrama.jpg" width="80%" style="padding: 10px;" />
+
+---
+
+### LISTA DE TECNOLOGÍAS
+
+<p align = "justify">
+
+Cliente:
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+Servidor:
+![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-Auth-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+
+Servicios Externos:
+![Stripe](https://img.shields.io/badge/Stripe-Pagos-6772E5?style=for-the-badge&logo=stripe&logoColor=white)
+![Resend](https://img.shields.io/badge/Resend-Emails-000000?style=for-the-badge&logo=resend&logoColor=white)
+
+Pruebas:
+![Google Chrome](https://img.shields.io/badge/Google_Chrome-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+Documentación:
+![Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)
+
+</p>
+
+---
+
+## Tabla de contenidos técnica
+
+1. [Contexto General del Sistema](#contexto-general-del-sistema)
+2. [Entregables de Definición](#1-entregables-de-definición)
+3. [Stack Tecnológico](#2-stack-tecnológico)
+4. [Arquitectura del Sistema](#3-arquitectura-del-sistema)
+5. [Estructura del Proyecto](#4-estructura-del-proyecto)
+6. [Guía de Instalación](#5-guía-de-instalación)
+7. [Variables de Entorno](#6-variables-de-entorno)
+8. [Esquema de Base de Datos](#7-esquema-de-base-de-datos)
+9. [Ejecución en Desarrollo](#8-ejecución-en-desarrollo)
+10. [Cuentas y Usuarios de Prueba](#9-cuentas-y-usuarios-de-prueba)
+11. [Flujo de Pago con Stripe](#10-flujo-de-pago-con-stripe)
+12. [Envío de Correos con Resend](#11-envío-de-correos-con-resend)
+13. [Documentación de APIs](#12-documentación-de-apis)
+14. [Troubleshooting](#13-troubleshooting)
+15. [Equipo y Créditos](#14-equipo-y-créditos)
+
+---
+
+## Contexto General del Sistema
+A-TENCIÓN es una plataforma web integral diseñada para la gestión de material educativo y experiencias sensoriales. El sistema actúa como un puente entre la plataforma y sus clientes principales (padres y terapeutas), permitiendo una administración eficiente de servicios de apoyo cognitivo y sensorial a través de un entorno digital intuitivo y seguro.
+
+---
+
+
+
+## Stack Tecnológico
 
 | Capa | Tecnologías Clave |
 |------|-------------------|
-| 🎨 **Frontend** | Next.js 14 (App Router) · React 18 · TypeScript · TailwindCSS · shadcn/ui · Framer Motion |
-| ⚙️ **Backend** | Node.js 20+ · Express 4 · `mysql2/promise` · JWT · bcrypt · Zod |
-| 🗄️ **Base de datos** | MySQL 8 |
-| 💳 **Pagos** | Stripe Checkout (API REST) |
-| 📧 **Emails** | Resend (API REST) |
+| **Frontend** | Next.js 14 (App Router) · React 18 · TypeScript · TailwindCSS · shadcn/ui · Framer Motion |
+| **Backend** | Node.js 20+ · Express 4 · `mysql2/promise` · JWT · bcrypt · Zod |
+| **Base de datos** | MySQL 8 |
+| **Pagos** | Stripe Checkout (API REST) |
+| **Emails** | Resend (API REST) |
 
 > **API Propia** (`/api/own/*`): catálogo, autenticación, carrito, panel admin.<br>
 > **APIs Externas** (`/api/integrations/*`): Stripe (pagos) y Resend (emails).
 
 ---
 
-## 🏗️ 3. Arquitectura del Sistema
+## Arquitectura del Sistema
 
 ```mermaid
 graph LR
-    A[📱 Next.js Frontend<br/>:3000] <-->|HTTP/JSON + JWT| B(⚙️ Express Backend<br/>:3001)
-    B -->|Consultas SQL| C[(🗄️ MySQL 8)]
-    B -->|Checkout + Webhook| D[💳 Stripe]
-    B -->|API REST| E[📧 Resend]
+    A[Next.js Frontend<br/>:3000] <-->|HTTP/JSON + JWT| B(Express Backend<br/>:3001)
+    B -->|Consultas SQL| C[(MySQL 8)]
+    B -->|Checkout + Webhook| D[Stripe]
+    B -->|API REST| E[Resend]
 ```
 
 <details>
-<summary><b>📐 Vista alternativa en ASCII</b></summary>
+<summary><b>Vista alternativa en ASCII</b></summary>
 
 ```
 ┌──────────────────────┐       HTTP/JSON + JWT        ┌──────────────────────┐
@@ -138,7 +182,7 @@ graph LR
 
 ---
 
-## 📁 4. Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 Proyecto 5to/
@@ -198,9 +242,9 @@ Proyecto 5to/
 
 ---
 
-## ⚙️ 5. Guía de Instalación
+## Guía de Instalación
 
-### ✅ Requisitos previos
+### Requisitos previos
 
 | Herramienta | Versión | Verificación |
 |-------------|---------|--------------|
@@ -211,7 +255,7 @@ Proyecto 5to/
 | Resend | Cuenta gratuita | [resend.com/signup](https://resend.com/signup) |
 | Git Bash | Recomendado en Windows | — |
 
-### 📦 Instalación paso a paso
+### Instalación paso a paso
 
 ```bash
 # 1) Clonar el repositorio
@@ -228,150 +272,7 @@ npm install
 ```
 
 ---
-
-## 🔐 6. Variables de Entorno
-
-### 📄 `backend/.env`
-
-Copia `.env.example` a `.env` y rellena los valores:
-
-```bash
-# ---- Base de datos ----
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=tu_password
-DB_NAME=proyecto
-
-# ---- JWT ----
-JWT_SECRET=una_clave_larga_y_aleatoria_min_32_caracteres
-JWT_EXPIRES_IN=7d
-
-# ---- Servidor ----
-PORT=3001
-FRONTEND_URL=http://localhost:3000
-
-# ---- Stripe (modo test) ----
-STRIPE_SECRET_KEY=sk_test_51xxxxxxxxxxxxxxxxxxxxxxxxx
-STRIPE_WEBHOOK_SECRET=whsec_xxxxxxxxxxxxxxxxxxxxxxxxx
-
-# ---- Resend ----
-RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxxxxxxx
-RESEND_FROM_EMAIL=onboarding@resend.dev
-RESEND_FROM_NAME=A-TENCIÓN
-# (OPCIONAL) En plan free Resend solo envía al email registrado.
-# Sobreescribe el destinatario para pruebas:
-RESEND_OVERRIDE_TO=tu-email-registrado-en-resend@gmail.com
-```
-
-### 📄 `frontend/.env`
-
-```bash
-NEXT_PUBLIC_API_URL=http://localhost:3001
-```
-
----
-
-## 🗄️ 7. Esquema de Base de Datos
-
-Crea la base de datos y las **6 tablas** que usa la aplicación:
-
-```sql
-CREATE DATABASE IF NOT EXISTS proyecto
-  DEFAULT CHARACTER SET utf8mb4
-  DEFAULT COLLATE utf8mb4_unicode_ci;
-USE proyecto;
-
-CREATE TABLE user (
-  id          VARCHAR(191) NOT NULL PRIMARY KEY,
-  nombre      VARCHAR(191) NOT NULL,
-  email       VARCHAR(191) NOT NULL UNIQUE,
-  password    VARCHAR(191) NOT NULL,
-  telefono    VARCHAR(191) NULL,
-  role        VARCHAR(50)  NOT NULL DEFAULT 'tutor',
-  createdAt   DATETIME(3)  NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
-  updatedAt   DATETIME(3)  NOT NULL DEFAULT CURRENT_TIMESTAMP(3)
-);
-
-CREATE TABLE nino (
-  id                VARCHAR(191) NOT NULL PRIMARY KEY,
-  nombre            VARCHAR(191) NOT NULL,
-  edad              INT          NOT NULL,
-  notasSensoriales  TEXT         NULL,
-  tutorId           VARCHAR(191) NOT NULL,
-  createdAt         DATETIME(3)  NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
-  updatedAt         DATETIME(3)  NOT NULL,
-  INDEX nino_tutorId_idx (tutorId),
-  FOREIGN KEY (tutorId) REFERENCES user(id) ON DELETE CASCADE
-);
-
-CREATE TABLE experiencia (
-  id                VARCHAR(191) NOT NULL PRIMARY KEY,
-  nombre            VARCHAR(191) NOT NULL,
-  categoria         VARCHAR(191) NOT NULL,
-  descripcion       TEXT         NOT NULL,
-  descripcionLarga  TEXT         NULL,
-  precio            DOUBLE       NOT NULL,
-  duracionMinutos   INT          NOT NULL,
-  rangoEdad         VARCHAR(191) NULL,
-  tamanoGrupo       VARCHAR(191) NULL,
-  beneficios        TEXT         NULL,
-  incluye           TEXT         NULL,
-  color             VARCHAR(191) NULL,
-  imagenUrl         VARCHAR(191) NULL,
-  rating            DOUBLE       NOT NULL DEFAULT 0,
-  reviews           INT          NOT NULL DEFAULT 0,
-  createdAt         DATETIME(3)  NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
-  updatedAt         DATETIME(3)  NOT NULL
-);
-
-CREATE TABLE fechadisponible (
-  id                VARCHAR(191) NOT NULL PRIMARY KEY,
-  experienciaId     VARCHAR(191) NOT NULL,
-  fecha             DATETIME(3)  NOT NULL,
-  horaInicio        VARCHAR(191) NOT NULL,
-  horaFin           VARCHAR(191) NOT NULL,
-  cuposTotales      INT          NOT NULL,
-  cuposDisponibles  INT          NOT NULL,
-  createdAt         DATETIME(3)  NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
-  INDEX fechadisponible_experienciaId_idx (experienciaId),
-  FOREIGN KEY (experienciaId) REFERENCES experiencia(id) ON DELETE CASCADE
-);
-
-CREATE TABLE reserva (
-  id         VARCHAR(191) NOT NULL PRIMARY KEY,
-  tutorId    VARCHAR(191) NOT NULL,
-  total      DOUBLE       NOT NULL,
-  estado     ENUM('Pendiente','Confirmada','Cancelada') NOT NULL DEFAULT 'Pendiente',
-  createdAt  DATETIME(3)  NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
-  INDEX reserva_tutorId_idx (tutorId),
-  FOREIGN KEY (tutorId) REFERENCES user(id) ON DELETE CASCADE
-);
-
-CREATE TABLE detallereserva (
-  id                  VARCHAR(191) NOT NULL PRIMARY KEY,
-  reservaId           VARCHAR(191) NOT NULL,
-  experienciaId       VARCHAR(191) NOT NULL,
-  fechaDisponibleId   VARCHAR(191) NOT NULL,
-  ninoId              VARCHAR(191) NULL,
-  cantidad            INT          NOT NULL DEFAULT 1,
-  precioUnitario      DOUBLE       NOT NULL,
-  INDEX detallereserva_reservaId_idx (reservaId),
-  INDEX detallereserva_experienciaId_idx (experienciaId),
-  INDEX detallereserva_fechaDisponibleId_idx (fechaDisponibleId),
-  INDEX detallereserva_ninoId_idx (ninoId),
-  FOREIGN KEY (reservaId)         REFERENCES reserva(id)         ON DELETE CASCADE,
-  FOREIGN KEY (experienciaId)     REFERENCES experiencia(id)     ON DELETE RESTRICT,
-  FOREIGN KEY (fechaDisponibleId) REFERENCES fechadisponible(id) ON DELETE RESTRICT,
-  FOREIGN KEY (ninoId)            REFERENCES nino(id)            ON DELETE SET NULL
-);
-```
-
-> 💡 **Tip:** Si prefieres un cliente con UI, copia el bloque anterior en MySQL Workbench → `Query → Execute`.
-
----
-
-## 🚀 8. Ejecución en Desarrollo
+## Ejecución en Desarrollo
 
 Abre **dos terminales**:
 
@@ -385,117 +286,13 @@ cd frontend
 npm run dev
 ```
 
-Abre <http://localhost:3000> en el navegador. 🎉
+Abre <http://localhost:3000> en el navegador.
 
 ---
 
-## 👥 9. Cuentas y Usuarios de Prueba
 
-### 🛡️ Emails hardcoded con rol `admin`
 
-Los siguientes correos, al registrarse o iniciar sesión, reciben automáticamente rol de administrador (definido en `backend/src/utils/jwt.js`):
-
-```
-240508@utxjicotepec.edu.mx
-240687@utxjicotepec.edu.mx
-240463@utxjicotepec.edu.mx
-240071@utxjicotepec.edu.mx
-```
-
-Cualquier otro email se registra como `tutor`.
-
-### ✍️ Registro manual
-
-1. Abre <http://localhost:3000/auth/registro>
-2. Completa el formulario (contraseña ≥ 6 caracteres)
-3. Serás redirigido al catálogo; si tu email está en la lista admin, al panel `/admin/reservas`
-
----
-
-## 💳 10. Flujo de Pago con Stripe
-
-> 🧪 **Modo test** — nunca se procesan cargos reales.
-
-### 💳 Tarjetas de prueba útiles
-
-| Escenario | Número | Expiración | CVC |
-|-----------|--------|------------|-----|
-| ✅ Pago exitoso | `4242 4242 4242 4242` | Cualquiera futura | `123` |
-| 🔐 Requiere autenticación 3DS | `4000 0025 0000 3155` | Cualquiera futura | `123` |
-| ❌ Tarjeta declinada | `4000 0000 0000 9995` | Cualquiera futura | `123` |
-
-### 🔁 Flujo completo
-
-```mermaid
-sequenceDiagram
-    participant U as 👤 Usuario
-    participant F as 📱 Frontend
-    participant B as ⚙️ Backend
-    participant S as 💳 Stripe
-    U->>F: Agrega experiencia al carrito
-    U->>F: Confirmar y pagar
-    F->>B: POST /api/integrations/payments/checkout
-    B->>S: Crea sesión Checkout
-    S-->>F: Redirect a Stripe
-    U->>S: Completa pago de prueba
-    S-->>F: Redirect /checkout/success?session_id=...
-    F->>B: Confirma sesión
-    B->>B: Crea reserva + decrementa cupos
-    B-->>U: 📧 Correo de confirmación
-```
-
-### 🔔 Webhook (opcional en dev)
-
-Para probar el webhook localmente:
-
-```bash
-# Instalar Stripe CLI → https://stripe.com/docs/stripe-cli
-stripe listen --forward-to localhost:3001/api/integrations/payments/webhook
-```
-
-Copia el `whsec_...` que imprime la CLI en `STRIPE_WEBHOOK_SECRET` del `.env`.
-
----
-
-## 📧 11. Envío de Correos con Resend
-
-- ⚠️ El plan **free** de Resend con `onboarding@resend.dev` **solo permite enviar al email con el que te registraste**.
-- 🧪 Para pruebas usa `RESEND_OVERRIDE_TO=...` en el `.env` → todos los correos se redirigen ahí.
-- 🌐 En producción, verifica un **dominio propio** en el dashboard de Resend.
-
-📬 Puedes ver el historial de correos enviados en <https://resend.com/emails>.
-
----
-
-## 📖 12. Documentación de APIs
-
-Tres documentos detallados con endpoints, parámetros, respuestas y ejemplos `curl`:
-
-| Documento | Descripción |
-|-----------|-------------|
-| [`docs/API-Propia.md`](./docs/API-Propia.md) | Backend Express (`/api/own/*`) |
-| [`docs/API-Stripe.md`](./docs/API-Stripe.md) | Integración de pagos |
-| [`docs/API-Resend.md`](./docs/API-Resend.md) | Integración de correos |
-
----
-
-## 🐛 13. Troubleshooting
-
-| Problema | Causa | Solución |
-|----------|-------|----------|
-| `ECONNREFUSED 127.0.0.1:3306` | MySQL apagado | Inicia el servicio MySQL |
-| `Error: STRIPE_SECRET_KEY no está configurada` | `.env` falta o sin `sk_test_...` | Copia la key desde Stripe dashboard |
-| `Invalid API Key provided` (Stripe 401) | Key truncada o mal copiada | Regenerar y pegar completa (empieza con `sk_test_51...`) |
-| `Datos inválidos` al pagar | Zod rechazó el body | Revisa que el carrito tenga items con IDs válidos |
-| No llega correo de confirmación | Email distinto al registrado en Resend | Agregar `RESEND_OVERRIDE_TO` al `.env` |
-| Puerto 3001 ocupado | Otro proceso usa el puerto | `lsof -i :3001` + `kill <PID>` o cambia `PORT` en `.env` |
-| `CORS blocked` | Backend sin `cors()` | Verifica que `app.js` use `app.use(cors())` |
-| `ERESOLVE` al `npm install` frontend | `eslint-config-next` incompatible | Ya bajado a `^14.2.35`; si persiste: `npm install --legacy-peer-deps` |
-| Admin panel muestra reservas vacías aunque existan | Token expirado | Logout + login para renovar JWT |
-
----
-
-## 📝 14. Equipo y Créditos
+## Equipo y Créditos
 
 <p align="center">
   <img src="https://img.shields.io/badge/Universidad-UTXJ-purple?style=for-the-badge" alt="UTXJ">
@@ -503,13 +300,13 @@ Tres documentos detallados con endpoints, parámetros, respuestas y ejemplos `cu
   <img src="https://img.shields.io/badge/Cuatrimestre-5°B-orange?style=for-the-badge" alt="5B">
 </p>
 
-- 🏛️ **Universidad:** Tecnológica de Xicotepec de Juárez
-- 🎓 **Programa:** T.S.U. en Desarrollo de Software Multiplataforma
-- 📘 **Materia:** Aplicaciones Web Orientadas a Servicios (AWOS)
-- 👨‍🏫 **Docente:** M.T.I. Marco Antonio Ramírez Hernández
-- 📅 **Cuatrimestre:** 5° · **Grupo:** B
+- **Universidad:** Tecnológica de Xicotepec de Juárez
+- **Programa:** T.S.U. en Desarrollo de Software Multiplataforma
+- **Materia:** Aplicaciones Web Orientadas a Servicios (AWOS)
+- **Docente:** M.T.I. Marco Antonio Ramírez Hernández
+- **Cuatrimestre:** 5° · **Grupo:** B
 
-### 👨‍💻 Integrantes
+### Integrantes
 
 | Matrícula | Nombre |
 |-----------|--------|
@@ -519,9 +316,7 @@ Tres documentos detallados con endpoints, parámetros, respuestas y ejemplos `cu
 | **M-240071** | Yhostin Manuel Ramírez González |
 
 ---
+
 <p align="center">
-  <img src="imagenes/organigrama.jpg" width="280" alt="Organigrama de equipo" style="border-radius:16px;">
-</p>
-<p align="center">
-  <sub>Hecho con 💜 por el equipo <b>Xicode</b> · Proyecto Integrador AWOS 2026</sub>
+  <sub>Hecho por el equipo <b>Xicode</b> · Proyecto Integrador AWOS 2026</sub>
 </p>
