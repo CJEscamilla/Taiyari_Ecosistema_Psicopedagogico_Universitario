@@ -517,7 +517,9 @@ Tres documentos detallados con endpoints, parámetros, respuestas y ejemplos `cu
 | **M-240071** | Yhostin Manuel Ramírez González |
 
 ---
-
+<p align="center">
+  <img src="imagenes/organigrama.jpg" width="280" alt="Organigrama de equipo" style="border-radius:16px;">
+</p>
 <p align="center">
   <sub>Hecho con 💜 por el equipo <b>Xicode</b> · Proyecto Integrador AWOS 2026</sub>
 </p>
