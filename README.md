@@ -1,6 +1,5 @@
 <p align="center">
   <img src="imagenes/LogoAtencion.jfif" width="300" alt="Logo A-TENCION 1">
-  <br>
   <img src="imagenes/LogoXicode.png" width="150" alt="Logo de la empresa">
 </p>
 
